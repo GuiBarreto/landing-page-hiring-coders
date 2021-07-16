@@ -4,6 +4,7 @@
     left: 0;
     right: 0;
     width: 100%;
+    z-index: 1;
     border-bottom: 0.1rem solid var(--light-grey-color);
 }
 
@@ -16,7 +17,7 @@
 }
 
 .menu h1 {
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     color: var(--primary-color); 
 }
 

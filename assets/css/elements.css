@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 /*
 font-family: 'Monteserrat', sans-serif; para h1, h2, h3, h4, h5, h6
 font-family: 'Open-sans', sans-serif;
@@ -13,6 +17,7 @@ body {
     font-family: 'Open-sans', sans-serif;
     font-size: 2rem;
     color: var(--primary-color);
+    line-height: 1.5;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,36 +25,39 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-size: 6rem;
-    text-transform: uppercase;
-}
-
-h2 {
-    font-size: 5rem;
-    text-transform: uppercase;
-}
-
-h3 {
     font-size: 4rem;
     text-transform: uppercase;
 }
 
-h4 {
-    font-size: 3rem;
+h2 {
+    font-size: 6rem;
+    margin-bottom: 5rem;
     text-transform: uppercase;
+    line-height: 1.2;
 }
 
-h5 {
+h3 {
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-h6 {
+h4 {
     font-size: 1rem;
+    text-transform: uppercase;
+}
+
+h5 {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+}
+
+h6 {
+    font-size: 0.5rem;
     text-transform: uppercase;
 }
 
 a {
     text-decoration: none;
 }
+
 
