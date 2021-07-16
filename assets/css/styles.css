@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .intro-text-content, .intro-img {
@@ -17,4 +17,55 @@
 .intro-img png {
     max-width: 40%;
     height: auto;
+}
+
+.promocao-content {
+    max-width: 80rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+.cursos-content {
+    display: flex;
+    flex-flow: column wrap;
+
+    justify-content: center;
+    min-height: 100vh;
+    counter-reset: cursoscounter;
+}
+
+.cursos-programacao {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
+
+.cursos-main-heading h2 {
+    margin-bottom: 1rem;
+}
+
+.cursos-description {
+    padding-bottom: 5rem;
+}
+
+.cursos-programacao h3{
+    font-size: 3rem;
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}
+
+.cursos-programacao h3::before {
+    counter-increment: cursoscounter;
+    content: counter(cursoscounter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -3rem;
+    left: -2rem;
+    transform: rotate(5deg);
 }
