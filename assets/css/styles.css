@@ -72,6 +72,7 @@
 
 .cadastro-form {
     grid-column: span 2;
+    margin-top: 15rem;
 }
 
 .cadastro-form .form-grid {
@@ -80,6 +81,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: var(--gap);
+    top: auto;
 }
 
 .form-group {
@@ -131,4 +133,20 @@
 
 .form-group ::placeholder {
     color: var(--secondary-color);
+}
+
+.footer {
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.footer a {
+    color: inherit;
+    color: #444;
+}
+
+.footer p {
+    margin: 0;
+    padding: 3rem;
+
 }
