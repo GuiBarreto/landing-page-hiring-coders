@@ -226,7 +226,7 @@
     display: none;
 }
 
-.curso-responsivo h2 {
+h2.curso-responsivo {
     font-size: 3.4rem;
     margin-bottom: 2rem;
 }
