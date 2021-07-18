@@ -51,10 +51,6 @@
     gap: var(--gap);
 }
 
-.cursos-main-heading h2 {
-    margin-bottom: 2rem;
-}
-
 .cursos-description {
     padding-bottom: 5rem;
 }
@@ -228,5 +224,9 @@
 
 .menu-spacing {
     display: none;
+}
+
+.cursos-main-heading h2 {
+    margin-bottom: 2rem;
 }
 }
