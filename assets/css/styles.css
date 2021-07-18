@@ -1,6 +1,6 @@
 .intro-content {
     position: relative;
-    top: -8rem;
+    top: -6rem;
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
@@ -13,6 +13,13 @@
     justify-content: center;
 }
 
+.intro-text-content h2 {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
 .intro-img img,
 .intro-img png {
     max-width: 40%;
@@ -20,8 +27,8 @@
 }
 
 .promocao-content {
-    max-width: 80rem;
     display: flex;
+    max-width: 80rem;
     flex-direction: column;
     flex-wrap: nowrap;
     justify-content: center;
@@ -30,7 +37,7 @@
 }
 
 .cursos-content {
-    display: flex;
+    display: block;
     flex-flow: column wrap;
 
     justify-content: center;
@@ -45,7 +52,7 @@
 }
 
 .cursos-main-heading h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .cursos-description {
@@ -56,7 +63,7 @@
     font-size: 3rem;
     position: relative;
     padding-left: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .cursos-programacao h3::before {
@@ -140,6 +147,7 @@
     font-size: 1.6rem;
 }
 
+
 .footer a {
     color: inherit;
     color: #444;
@@ -148,12 +156,62 @@
 .footer p {
     margin: 0;
     padding: 3rem;
-
 }
 
+.close-menu {
+    display: none;
+}
 
 @media (max-width: 800px) {
-    .intro-content, .grid {
+    .intro-content, .cursos-programacao {
         grid-template-columns: 1fr;
     }
+
+
+.menu {
+    bottom: 0;
+    text-align: center;
+}
+
+.menu-content, .menu-content ul {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-content {
+    height: 100vh;
+}
+
+.menu {
+    display: none;
+}
+
+.close-menu-label::after {
+    content: ' ☰ ';
+    position: fixed;
+    z-index: 2;
+    top: 0.5rem;
+    right: 2rem;
+    background: var(--white-color);
+    color: var(--primary-color);
+    font-size: 2rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.3rem;
+    cursor: pointer;
+}
+/*   × */
+.close-menu:checked~.menu {
+    display: block;
+}
+
+.close-menu:checked~.close-menu-label::after {
+    content: ' × ';
+}
+
+.menu-spacing {
+    display: none;
+}
 }
