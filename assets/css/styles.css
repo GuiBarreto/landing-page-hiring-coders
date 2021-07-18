@@ -162,6 +162,21 @@
     display: none;
 }
 
+.back-to-top {
+    position:fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background: var(--white-color);
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--primary-color);
+    border: 0.1px solid;
+}
+
 @media (max-width: 800px) {
     .intro-content, .cursos-programacao {
         grid-template-columns: 1fr;
