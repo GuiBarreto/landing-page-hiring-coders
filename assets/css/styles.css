@@ -131,10 +131,6 @@
     background: var(--primary-color);
 }
 
-.form-group button {
-    
-}
-
 .form-group ::placeholder {
     color: var(--secondary-color);
 }
