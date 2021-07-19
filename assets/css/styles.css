@@ -74,17 +74,14 @@
 }
 
 .cadastro-form {
-    grid-column: span 2;
     margin-top: 15rem;
+    display: flex;
+    flex-flow: column;
 }
 
 .cadastro-form .form-grid {
     border: none;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: var(--gap);
-    top: auto;
+    
 }
 
 .form-group {
@@ -134,6 +131,10 @@
     background: var(--primary-color);
 }
 
+.form-group button {
+    
+}
+
 .form-group ::placeholder {
     color: var(--secondary-color);
 }
@@ -171,6 +172,10 @@
     border-radius: 50%;
     color: var(--primary-color);
     border: 0.1px solid;
+}
+
+.button-submit {
+    margin-top: 2rem;
 }
 
 @media (max-width: 800px) {
