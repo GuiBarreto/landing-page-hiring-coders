@@ -8,6 +8,7 @@ form.addEventListener('submit', (e) => {
     localStorage.setItem('cadastro', JSON.stringify({firstName:firstName.value, lastName:lastName.value, email:email.value})) 
 
     form.reset()
+    window.alert('Cadastro efetuado com sucesso!');
 })
 
 
