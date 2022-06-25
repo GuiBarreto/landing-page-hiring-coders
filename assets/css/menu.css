@@ -34,7 +34,7 @@
     display: block;
     padding: 2rem;
     font-size: 1.8rem;
-    color: var(--primary-color);
+    color: var(--color-letter);
     position: relative;
 }
 
